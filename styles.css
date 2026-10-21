@@ -187,3 +187,4 @@ footer {
 .contact-card .big { font-size: 1.35rem; font-weight: 700; color: var(--white); text-decoration: none; word-break: break-word; }
 .contact-card .big:hover { color: var(--pink); }
 .contact-card p { margin: 8px 0 0; }
+.contact-card .big.email { font-size: 1.1rem; word-break: normal; overflow-wrap: anywhere; }
