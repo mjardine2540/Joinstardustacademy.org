@@ -140,3 +140,37 @@ footer {
 .course-card .cta a { color: var(--pink); text-decoration: none; }
 .tag.open { background: var(--pink); color: var(--navy); }
 .course-card .tag { align-self: flex-start; }
+
+/* About page */
+.split { display: grid; grid-template-columns: 1fr; gap: 28px; }
+@media (min-width: 820px) { .split { grid-template-columns: 1.1fr 0.9fr; align-items: start; } }
+.prose p { color: var(--muted); font-size: 1.05rem; margin: 0 0 16px; }
+.prose p strong { color: var(--white); }
+.founder {
+  background: var(--navy-2); border-radius: 14px; padding: 26px;
+  border: 1px solid rgba(242,174,200,0.25);
+}
+.founder .badge {
+  width: 72px; height: 72px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--pink); color: var(--navy);
+  font-family: "Graduate", serif; font-size: 1.5rem;
+}
+.founder h3 { margin: 16px 0 2px; font-size: 1.3rem; }
+.founder .role { color: var(--pink); font-weight: 600; margin: 0 0 12px; }
+.founder p { color: var(--muted); margin: 0; }
+.section { padding: 48px 0; }
+.section.alt { background: var(--navy-2); }
+.section h2 { font-size: clamp(1.6rem, 4vw, 2.3rem); margin-bottom: 22px; }
+.values .card h3 { margin-top: 0; color: var(--pink); }
+.who { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.who li { padding-left: 30px; position: relative; font-size: 1.05rem; }
+.who li::before { content: "\2605"; position: absolute; left: 0; color: var(--pink); }
+
+/* Header spacing fix */
+.wrap.bar { padding: 18px 20px; gap: 12px; }
+@media (max-width: 560px) {
+  .wrap.bar { flex-wrap: wrap; padding: 14px 16px; }
+  .bar nav { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+  .bar nav a { margin-left: 0; }
+}
